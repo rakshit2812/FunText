@@ -17,9 +17,6 @@ export default function Textform(props) {
         setText(newtext);
     }
     const clearClick = ()=>{
-        if(text===''){
-            props.showAlert("The Text is already cleared" , "danger");
-        }
         localStorage.setItem(1,text);
         let newtext = '';
         setText(newtext);
